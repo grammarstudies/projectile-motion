@@ -28,13 +28,12 @@ namespace projectilemotion
         public static Attribute t = new Attribute("time","s");
         public static Attribute initVelo = new Attribute("initial diagonal velocity","m/s");
         public static Attribute finalVelo = new Attribute("final diagonal velocity","m/s");
-        public static Attribute initAngle = new Attribute("launch angle", "°");
-        public static Attribute finalAngle = new Attribute("impact angle", "°");
+        public static Attribute initAngle = new Attribute("launch angle", "Â°");
+        public static Attribute finalAngle = new Attribute("impact angle", "Â°");
         public static Attribute maxHeight = new Attribute("maximum height","m");
         public static List<Attribute> answers = new List<Attribute> { dx, vx, dy, voy, vy, t, initVelo, finalVelo, initAngle, finalAngle, maxHeight };
         public static bool end;
 
-        //HOW THE MAGIC HAPPENS
         public static void Calculate()
         {
             void tickEvent(Object source, System.Timers.ElapsedEventArgs e)
@@ -141,7 +140,6 @@ namespace projectilemotion
                     question.given = true;
             }
         }
-        //WHERE THE MAGIC HAPPENS
         static void Main(string[] args)
         {
             string answer;
