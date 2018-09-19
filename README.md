@@ -1,2 +1,5 @@
 # projectile-motion
-old, buggy homework project
+Written as a way to shorten time spent doing homework, writing and debugging the program ultimately cost me more man-hours than if I had done the homework outright. In spite of this, this project retains its recreational value, and served as an interesting introduction to console input/output and C# as a whole.
+
+The program can run as a standalone .exe file. When asked for input, there are certain data points on the projectile's motion that must be provided for a full calculation to be done (for example, only entering the projectile's horizontal distance will return "Values could not be calculated. Did you provide all the necessary information?"). Once the sufficient data points are entered, the program will output the rest of the relevant data for the projectile's motion.
+Furthermore, as a currently incomplete program, some combinations of data points that, to a seasoned physicist, may obviously allow one to deduce the rest of the data, might not allow the program to do the same. Additionally, the order in which values are calculated in the program may have a bearing on the output.
